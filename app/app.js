@@ -33,21 +33,23 @@ function getResult() {
         result = 'It\'s a draw'
     }
     else if (computerChoice==='Rock' && userChoice=='Paper'){
-        result = 'It\'s a draw'
+        result = 'You win!'
     }
     else if (computerChoice==='Rock' && userChoice=='Scissors'){
-        result = 'You win!'
+        result = 'You lose :('
     }
     else if (computerChoice==='Paper' && userChoice=='Scissors'){
-        result = 'You lose :('
+        result = 'You win!'
     }
     else if (computerChoice==='Paper' && userChoice=='Rock'){
-        result = 'You win!'
-    }
-    else if (computerChoice==='Scissors' && userChoice=='Paper'){
-        result = 'You win!'
-    }
-    else if (computerChoice==='Scissors' && userChoice=='Rock'){
         result = 'You lose :('
     }
+    else if (computerChoice==='Scissors' && userChoice=='Paper'){
+        result = 'You lose :('
+    }
+    else if (computerChoice==='Scissors' && userChoice=='Rock'){
+        result = 'You win!'
+    }
+
+    resultDisplay.innerHTML = result
 }
